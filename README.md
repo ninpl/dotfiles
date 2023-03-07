@@ -129,7 +129,7 @@ El proyecto esta mantenido por [N9+](https://github.com/ninpl) con ayuda de los 
 
 |           |   | Inspiración y Recursos     |         |    Licencia        |
 |:---------:|:-:|:-------------------------------|:--------------------|:----------:|
-|  Imagen | 1 | [Kevin Hong](https://www.kevinhong.com/ffvii-church)  |   |   [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0)         |
+|  Readme | 1 | [Harry Kurn](https://github.com/owl4ce)  |   |   [GPL-3.0](https://github.com/owl4ce/dotfiles/blob/ng/LICENSE)         |
 |  contributors-img  | 2 | [Suguru Inatomi](https://github.com/lacolaco)         |   | Sin Licencia |
 |  Shields  | 3 | [Thaddée Tyl](https://github.com/espadrine)         |   | [CC0 LICENSE](https://github.com/badges/shields/blob/master/LICENSE) |
 
