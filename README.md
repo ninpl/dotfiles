@@ -48,15 +48,38 @@ NUNCA OMITIR / IGNORAR / EVITAR LEERME
 </p>
 
 <p align="center">
-  <em>Ejemplo de lo que se muestra en la imagen/gif de arriba. Compruébalo en <a href="https://github.com/ninpl/dotfiles">xx.doc</a>.</em>
+  <em>Una captura de mi VS Code y la terminal de <a href="https://learn.microsoft.com/es-es/windows/terminal/">windows</a>.</em>
 </p>
 
 ## :octocat: ‎ <sup><sub><samp>¡HOLA! ¡GRACIAS POR VENIR!</samp></sub></sup>
 
 <img src="./res/info.png" align="right"
-     alt="Info" width="200" height="320">
+     alt="Info" width="403" height="750">
      
-Descripción del proyecto.
+Este repo contiene la configuración que uso personalmente para mi entorno de trabajo. Algunas configuraciones son de Linux y otras de Windows. Solo queria tener un repo dotfile por si necesitaba restaurar o cambiar mi entorno, por lo que no explicare mucho, pero si tienes dudas hazmelo saber.
+
+La mayoría fueron escritos desde cero. Algunos detalles:
+- **Window Manager** : [Komorebi](https://github.com/LGUG2Z/komorebi) con [AutoHotkey](https://github.com/AutoHotkey/AutoHotkey)!
+- **Barra Estado** : [Yasb](https://github.com/DenBot/yasb) unido a [Komorebi](https://github.com/LGUG2Z/komorebi)!
+- **IDE Principal** : [Rider](https://www.jetbrains.com/es-es/rider/) con [ReSharper](https://www.jetbrains.com/es-es/resharper/)!
+- **IDE Secundario** : [Clion](https://www.jetbrains.com/es-es/clion/) con [ReSharper C++](https://www.jetbrains.com/es-es/resharper-cpp/)!
+- **Motor Videojuegos** : [Unity](https://unity.com/) con tema oscuro!
+- **Terminal (Emulador)** : [Terminal](https://github.com/microsoft/terminal) con tema dark!
+- **Shell** : [Powershell](https://learn.microsoft.com/es-es/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3) con [Oh My Posh](https://ohmyposh.dev/)!
+- **Lanzador Apps** : [Flow Launcher](https://github.com/Flow-Launcher/Flow.Launcher) con plugins!
+- **Visualizador** : [Quick Look](https://github.com/QL-Win/QuickLook) con plugins!
+
+En Linux:
+- **Window Manager** : [Yabai](https://github.com/koekeishiya/yabai) con [AutoHotkey](https://github.com/AutoHotkey/AutoHotkey)!
+- **Terminal (Emulador)** : [Fluent Terminal](https://github.com/felixse/FluentTerminal) con tema dual!
+- **Shell** : [Zsh](https://www.zsh.org/) con [oh-my-zsh](https://ohmyz.sh/) framework!
+- **Git UI** : [Lazygit](https://github.com/jesseduffield/lazygit)!
+
+---
+
+Algunas de estas configuraciones, tienen altas dependencias. Recomiendo antes de copiar leer la seccion de dependencias para que no se rompa nada. Algunos archivos tienen las rutas parcheadas para modificarlas a mano, por ejemplo las rutas de los alias, es recomendable borrarlas o cambiarles la ruta.
+
+Se libre de clonar el repositorio y modificar todo lo que te venga mejor. Normalmente actualizo cada año mi entorno, por lo que tambien se actualizara este repositorio.
 
 <div align="center">
 
