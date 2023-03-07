@@ -1,0 +1,144 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "background": "#d3d7cf",
+          "foreground": "#000000",
+          "leading_diamond": "\u256d\u2500\ue0b2",
+          "style": "diamond",
+          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
+          "type": "os"
+        },
+        {
+          "background": "#454445",
+          "foreground": "#03aaf7",
+          "powerline_symbol": "\ue0b0",
+          "properties": {
+            "home_icon": "~",
+            "style": "letter"
+          },
+          "style": "powerline",
+          "template": " \uf07c {{ .Path }} ",
+          "type": "path"
+        },
+        {
+          "background": "#454445",
+          "background_templates": [
+            "{{ if or (.Working.Changed) (.Staging.Changed) }#454445{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#454445{{ end }}",
+            "{{ if gt .Ahead 0 }}#454445{{ end }}",
+            "{{ if gt .Behind 0 }}#454445{{ end }}"
+          ],
+          "foreground": "#5fd103",
+          "powerline_symbol": "\ue0b0",
+          "properties": {
+            "branch_icon": "\uf126 ",
+            "fetch_stash_count": true,
+            "fetch_status": true,
+            "fetch_upstream_icon": true
+          },
+          "style": "powerline",
+          "template": " en {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
+          "type": "git"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "right",
+      "segments": [
+        {
+          "foreground": "#a9ffb4",
+          "background": "#454445",
+          "invert_powerline": true,
+          "powerline_symbol": "\ue0b2",
+          "properties": {
+            "style": "dallas",
+            "threshold": 0
+          },
+          "style": "powerline",
+          "template": " {{ .FormattedMs }}s <#ffffff>\ue601</>",
+          "type": "executiontime"
+        },
+        {
+          "foreground": "#94ffa2",
+          "powerline_symbol": "\ue0b2",
+          "background": "#454445",
+          "invert_powerline": true,
+          "style": "powerline",
+          "template": " <#ffffff>CPU:</> {{ round .PhysicalPercentUsed .Precision }}% ",
+          "type": "sysinfo"
+        },
+        {
+          "foreground": "#81ff91",
+          "powerline_symbol": "\ue0b0",
+          "background": "#454445",
+          "invert_powerline": true,
+          "style": "powerline",
+          "template": "<#ffffff>\uf6dc</> <#ffffff>RAM:</> {{ (div ((sub .PhysicalTotalMemory .PhysicalFreeMemory)|float64) 1000000000.0) }}/{{ (div .PhysicalTotalMemory 1000000000.0) }}GB ",
+          "type": "sysinfo"
+        },
+        {
+          "foreground": "#d3d7cf",
+          "style": "plain",
+          "template": "\u2500\u256e",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#d3d7cf",
+          "style": "plain",
+          "template": "\u2570\u2500",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "segments": [
+        {
+          "background": "#454445",
+          "invert_powerline": true,
+          "properties": {
+            "root_icon": "\uf292 "
+          },
+          "powerline_symbol": "\ue0b2",
+          "style": "powerline",
+          "template": " <#84acd2>Nervelink</> \uf0e7 ",
+          "type": "root"
+        },
+        {
+          "background": "#454445",
+          "foreground": "#a9ffb4",
+          "invert_powerline": true,
+          "style": "diamond",
+          "properties": {
+            "time_format": "3:04 PM"
+          },
+          "template": " {{ .CurrentDate | date .Format }} \uf017 ",
+          "trailing_diamond": "\ue0b0",
+          "type": "time"
+        },
+        {
+          "foreground": "#d3d7cf",
+          "style": "plain",
+          "template": "\u2500\u256f",
+          "type": "text"
+        } 
+      ],
+      "type": "rprompt"
+    }
+  ],
+  "console_title_template": "{{ .Shell }} in {{ .Folder }}",
+  "final_space": true,
+  "version": 2
+}
