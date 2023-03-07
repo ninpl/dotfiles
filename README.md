@@ -111,13 +111,13 @@ winget install LGUG2Z.whkd
 winget install LGUG2Z.komorebi
 ```
 ```powershell
-iwr https://github.com/ninpl/dotfiles/blob/main/komorebi/komorebi.generated.ps1 -OutFile $Env:USERPROFILE\.config\komorebi\komorebi.generated.ps1
+iwr https://raw.githubusercontent.com/ninpl/dotfiles/main/komorebi/komorebi.generated.ps1 -OutFile $Env:USERPROFILE\.config\komorebi\komorebi.generated.ps1
 ```
 ```powershell
-iwr https://github.com/ninpl/dotfiles/blob/main/komorebi/komorebi.ps1 -OutFile $Env:USERPROFILE\.config\komorebi\komorebi.ps1
+iwr https://raw.githubusercontent.com/ninpl/dotfiles/main/komorebi/komorebi.ps1 -OutFile $Env:USERPROFILE\.config\komorebi\komorebi.ps1
 ```
 ```powershell
-iwr https://raw.githubusercontent.com/LGUG2Z/komorebi/master/whkdrc.sample -OutFile $Env:USERPROFILE\.config\whkdrc
+iwr https://raw.githubusercontent.com/ninpl/dotfiles/main/whkd/whkdrc -OutFile $Env:USERPROFILE\.config\whkdrc
 ```
 ```powershell
 komorebic start --await-configuration
