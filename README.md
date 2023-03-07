@@ -65,7 +65,7 @@ La mayoría fueron escritos desde cero. Algunos detalles:
 - **IDE Secundario** : [Clion](https://www.jetbrains.com/es-es/clion/) con [ReSharper C++](https://www.jetbrains.com/es-es/resharper-cpp/)!
 - **Motor Videojuegos** : [Unity](https://unity.com/) con tema oscuro!
 - **Terminal (Emulador)** : [Terminal](https://github.com/microsoft/terminal) con tema dark!
-- **Shell** : [Powershell](https://learn.microsoft.com/es-es/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3) con [Oh My Posh](https://ohmyposh.dev/)!
+- **Shell** : [Powershell](https://learn.microsoft.com/es-es/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3) con [oh-my-posh](https://ohmyposh.dev/)!
 - **Lanzador Apps** : [Flow Launcher](https://github.com/Flow-Launcher/Flow.Launcher) con plugins!
 - **Visualizador** : [Quick Look](https://github.com/QL-Win/QuickLook) con plugins!
 
@@ -108,13 +108,37 @@ Instalar PS
 ```powershell
 winget install --id Microsoft.Powershell --source winget
 ```
+Instalar Dependencias PS
+```powershell
+Install-Module -Name Terminal-Icons -Repository PSGallery
+```
+```powershell
+PowerShellGet\Install-Module posh-git -Scope CurrentUser -Force
+```
+Instalar las fuentes Fira
+Copiar la configuracion de PS
+```powershell
+Copy-Item "./ps/Microsoft.PowerShell_profile.ps1" -Destination $Env:USERPROFILE + "\OneDrive\Documentos\PowerShell" -Recurse
+```
 Instalar la terminal
 ```powershell
 winget install Microsoft.WindowsTerminal
 ```
 Copiar la configuracion en la carpeta
 ```powershell
-Copy-Item "./terminal/settings.json" -Destination $Env:USERPROFILE + "\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\" -Recurse
+Copy-Item "./terminal/settings.json" -Destination $Env:USERPROFILE + "\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState" -Recurse
+```
+Instalar oh-my-posh
+```powershell
+winget install JanDeDobbeleer.OhMyPosh -s winget
+```
+Reinicia la terminal
+```powershell
+. $PROFILE
+```
+Copiar el tema oh-my-posh
+```powershell
+Copy-Item "./oh-my-posh/n9p.omp.json" -Destination $Env:USERPROFILE + "\AppData\Local\Programs\oh-my-posh\themes" -Recurse
 ```
 </details>
 
@@ -159,8 +183,9 @@ komorebic start --await-configuration
 
 | Nombre                                                                                                 | Version                                                              | Licencia |
 |:-----------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------|:------------------------------|
-| [Post-Processing](https://docs.unity3d.com/Packages/com.unity.postprocessing@2.2/manual/Installation.html)                       | 2.2 | [U-P-D-L 1.0](https://unity.com/legal/licenses/unity-package-distribution-license)    |
-| [kevinhong-ffvii](https://www.kevinhong.com/ffvii-church)             | 1.0 | [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0)    |
+| [Terminal-Icons](https://github.com/devblackops/Terminal-Icons)                       | 0.10.0 | [MIT](https://github.com/devblackops/Terminal-Icons/blob/main/LICENSE)    |
+| [posh-git](https://github.com/dahlbyk/posh-git)            | 1.1.0 | [MIT](https://github.com/dahlbyk/posh-git/blob/master/LICENSE.txt)   |
+| [FiraCode](https://github.com/tonsky/FiraCode)                       | 6.2 | [OFL-1.1](https://github.com/tonsky/FiraCode/blob/master/LICENSE)    |
   
 ## <samp>Descargar</samp>
 
