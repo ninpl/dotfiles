@@ -98,30 +98,42 @@ CLIC O TOQUE ❲☰❳ PARA VER EL ESPEJO
 git clone https://github.com/ninpl/dotfiles.git
 ```
 
+<details>
+<summary><b>Komorebi</b></summary>
+
+Crear la carpeta .config si no existe
 ```powershell
 mkdir $Env:USERPROFILE\.config -ea 0
 ```
+Crear la carpeta de komorebi
 ```powershell
 mkdir -p ~/.config/komorebi
 ```
+Instalar whkd
 ```powershell
 winget install LGUG2Z.whkd
 ```
+Instalar komorebi
 ```powershell
 winget install LGUG2Z.komorebi
 ```
+Descargar configuracion generada
 ```powershell
 iwr https://raw.githubusercontent.com/ninpl/dotfiles/main/komorebi/komorebi.generated.ps1 -OutFile $Env:USERPROFILE\.config\komorebi\komorebi.generated.ps1
 ```
+Descargar configuracion komorebi
 ```powershell
 iwr https://raw.githubusercontent.com/ninpl/dotfiles/main/komorebi/komorebi.ps1 -OutFile $Env:USERPROFILE\.config\komorebi\komorebi.ps1
 ```
+Descargar configuracion whkdrc
 ```powershell
 iwr https://raw.githubusercontent.com/ninpl/dotfiles/main/whkd/whkdrc -OutFile $Env:USERPROFILE\.config\whkdrc
 ```
+Iniciar komorebi
 ```powershell
 komorebic start --await-configuration
 ```
+</details>
 
 ## <samp>Dependencias</samp>
 
