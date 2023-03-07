@@ -94,10 +94,33 @@ CLIC O TOQUE ❲☰❳ PARA VER EL ESPEJO
 
 ## <samp>Configuracion</samp>
 
-Descripción de como usarlo.
-
-```
+```powershell
 git clone https://github.com/ninpl/dotfiles.git
+```
+
+```powershell
+mkdir $Env:USERPROFILE\.config -ea 0
+```
+```powershell
+mkdir -p ~/.config/komorebi
+```
+```powershell
+winget install LGUG2Z.whkd
+```
+```powershell
+winget install LGUG2Z.komorebi
+```
+```powershell
+iwr https://github.com/ninpl/dotfiles/blob/main/komorebi/komorebi.generated.ps1 -OutFile $Env:USERPROFILE\.config\komorebi\komorebi.generated.ps1
+```
+```powershell
+iwr https://github.com/ninpl/dotfiles/blob/main/komorebi/komorebi.ps1 -OutFile $Env:USERPROFILE\.config\komorebi\komorebi.ps1
+```
+```powershell
+iwr https://raw.githubusercontent.com/LGUG2Z/komorebi/master/whkdrc.sample -OutFile $Env:USERPROFILE\.config\whkdrc
+```
+```powershell
+komorebic start --await-configuration
 ```
 
 ## <samp>Dependencias</samp>
