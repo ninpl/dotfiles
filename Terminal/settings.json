@@ -77,7 +77,7 @@
                 },
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
-                "icon": "C:\\Users\\pinch\\OneDrive\\Escritorio\\Alexandria\\icon.ico",
+                "icon": "C:\\Users\\{{usuario}}\\OneDrive\\Escritorio\\Alexandria\\icon.ico",
                 "name": "Terminal",
                 "opacity": 5,
                 "source": "Windows.Terminal.PowershellCore",
