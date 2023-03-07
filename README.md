@@ -144,5 +144,5 @@ El proyecto esta mantenido por [N9+](https://github.com/ninpl) con ayuda de los 
 </pre>
 
 <pre align="center">
-  <a href="#------------------readme-template--">VOLVER ARRIBA</a>
+  <a href="#readme">VOLVER ARRIBA</a>
 </pre>
