@@ -95,8 +95,28 @@ CLIC O TOQUE ❲☰❳ PARA VER EL ESPEJO
 ## <samp>Configuracion</samp>
 
 ```powershell
+winget upgrade
+```
+```powershell
 git clone https://github.com/ninpl/dotfiles.git
 ```
+
+<details>
+<summary><b>Terminal & Shell</b></summary>
+
+Instalar PS
+```powershell
+winget install --id Microsoft.Powershell --source winget
+```
+Instalar la terminal
+```powershell
+winget install Microsoft.WindowsTerminal
+```
+Copiar la configuracion en la carpeta
+```powershell
+Copy-Item "./terminal/settings.json" -Destination $Env:USERPROFILE + "\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\" -Recurse
+```
+</details>
 
 <details>
 <summary><b>Komorebi</b></summary>
