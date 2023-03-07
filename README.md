@@ -10,7 +10,7 @@ NUNCA OMITIR / IGNORAR / EVITAR LEERME
   <br>
     <a href="https://github.com/ninpl/dotfiles"><img src="./res/logo.png" alt="LogoRepo" width="100"></a>
       <br>
-      README-Template
+      dotfiles
   <br>
 </h1>
 
@@ -37,8 +37,8 @@ NUNCA OMITIR / IGNORAR / EVITAR LEERME
       <img src="./res/idioma.png" width="18" height="18">
       <sup>
             Español,
-            ~~Ingles~~,
-            ~~Chino (中文)~~
+            <strike>Ingles</strike>,
+            <strike>Chino (中文)</strike>
       </sup>
   </sup>
 </p>
