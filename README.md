@@ -8,7 +8,7 @@ NUNCA OMITIR / IGNORAR / EVITAR LEERME
 
 <h1 align="center">
   <br>
-    <a href="https://github.com/ninpl/dotfiles"><img src="./res/logo.png" alt="LogoRepo" width="100"></a>
+    <a href="https://github.com/ninpl/dotfiles"><img src="./res/logo.png" alt="LogoRepo" width="300"></a>
       <br>
       dotfiles
   <br>
